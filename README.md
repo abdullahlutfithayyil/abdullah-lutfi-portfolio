@@ -35,33 +35,13 @@ The anonymous comments wall uses a Supabase function configured in `js/data.js`.
 
 ## Publish with GitHub and Netlify
 
-Git keeps a history of changes on your computer, so you can see what changed and return to an earlier version. GitHub stores a copy of that history online. Netlify hosts the website and can publish updates whenever you push them to GitHub.
+Git keeps a history of changes on your computer, so you can see what changed and return to an earlier version. GitHub stores that history online. Netlify hosts the website and can publish updates whenever you push them to GitHub.
 
-1. Install Git for Windows if `git` is not available in PowerShell. In PowerShell, go to this project folder and create the first saved version:
+The project is already initialized in Git and pushed to a private GitHub repository: <https://github.com/abdullahlutfithayyil/abdullah-lutfi-portfolio>. Keeping the code private does not prevent the website from being public.
 
-   ```powershell
-   Set-Location "$HOME\OneDrive\Documents\Portfolio\abdullah-lutfi-portfolio\abdullah-lutfi-portfolio"
-   git init -b main
-   git add .
-   git commit -m "Prepare portfolio for launch"
-   ```
+To publish it, sign in to Netlify, choose **Add new project** → **Import an existing project**, connect GitHub, and select `abdullah-lutfi-portfolio`. Keep the build command empty and the publish directory set to `.` (the existing `netlify.toml` specifies this). Netlify will give the site a public `netlify.app` address after deployment. No Netlify account is connected from this project yet.
 
-   `git add` selects the files for a checkpoint; `git commit` saves that checkpoint in your local history.
-
-2. On GitHub, create a new repository. Private is fine—the published website can still be public. Leave the options to add a README, `.gitignore`, or license unchecked, because this folder already has project files.
-
-3. Connect your local folder to the new GitHub repository. Replace the example URL with the repository URL GitHub shows you:
-
-   ```powershell
-   git remote add origin https://github.com/YOUR-USERNAME/abdullah-lutfi-portfolio.git
-   git push -u origin main
-   ```
-
-   `git push` uploads your saved commits to GitHub.
-
-4. In Netlify, choose **Add new project** and import the GitHub repository. The existing `netlify.toml` sets the publish directory to `.`; leave the build command empty. Netlify will give the site a public `netlify.app` address.
-
-After future edits, save and publish them with:
+After editing the website, save and publish changes with:
 
 ```powershell
 git add .
@@ -69,7 +49,7 @@ git commit -m "Describe your change"
 git push
 ```
 
-Netlify will automatically deploy the new version from GitHub. You can add a custom domain later if you want one.
+`git add` selects files for the next checkpoint, `git commit` saves that checkpoint to your local history, and `git push` uploads it to GitHub. Netlify will automatically deploy the new version. You can add a custom domain later if you want one.
 
 ## Features
 
