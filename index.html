@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Abdullah Lutfi Thayyil — Artist & Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Abdullah Lutfi Thayyil: fine artist, MuLearn FISAT graphic designer and frontend developer between Dammam and Kerala."
+    />
+    <meta name="theme-color" content="#1A1318" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Abdullah Lutfi Thayyil — Artist & Designer" />
+    <meta
+      property="og:description"
+      content="Oil paintings, posters and interfaces by Abdullah Lutfi Thayyil."
+    />
+    <meta property="og:image" content="https://abdullahlutfi.figma.site/assets/social-image-B_begJn3.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script>
+      /* Apply saved theme/language before first paint to avoid a flash. */
+      try {
+        var t = JSON.parse(localStorage.getItem("theme"));
+        var l = JSON.parse(localStorage.getItem("lang"));
+        if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+        if (l === "ar") {
+          document.documentElement.setAttribute("lang", "ar");
+          document.documentElement.setAttribute("dir", "rtl");
+        }
+      } catch (e) {}
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abdullah Lutfi Thayyil",
+        "jobTitle": "Artist, graphic designer and frontend developer",
+        "email": "mailto:lutfithayyil7309@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/abdullahlutfithayyil/",
+          "https://www.behance.net/abdullathayyil",
+          "https://www.linkedin.com/in/abdullah-lutfi-thayyil-01abb0310/",
+          "https://www.youtube.com/@abdullah-lutfi",
+          "https://x.com/LutfiThayy39276"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#work" data-i18n="skip">Skip to content</a>
+
+    <!-- Floating glass navigation -->
+    <header class="nav-wrap">
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a class="nav-link nav-pos-1" href="#work" data-i18n="nav.work">Work</a>
+        <a class="nav-link nav-pos-2" href="#about" data-i18n="nav.about">About</a>
+        <a class="nav-logo nav-pos-3" href="#top" data-i18n="hero.name">Abdullah Lutfi</a>
+        <a class="nav-link nav-pos-4" href="#contact" data-i18n="nav.contact">Contact</a>
+        <div class="nav-tools nav-pos-5">
+          <button class="icon-btn" id="theme-toggle" type="button"></button>
+          <button class="icon-btn" id="lang-toggle" type="button"></button>
+          <button
+            class="icon-btn nav-menu-btn"
+            id="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-sky" aria-hidden="true"></div>
+
+        <div class="hero-deck" aria-label="Poster deck">
+          <div class="deck-stage" id="deck"></div>
+          <div class="deck-bar">
+            <p class="deck-caption" data-i18n="hero.deckTitle">Pick a poster. Poke around.</p>
+            <div class="deck-actions">
+              <button class="chip" id="deck-shuffle" type="button"></button>
+              <button class="chip" id="deck-fan" type="button"></button>
+              <span class="deck-count" id="deck-count" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <h1 class="wordmark" data-i18n="hero.name">Abdullah Lutfi</h1>
+          <p class="tagline" data-i18n="hero.tagline">Makes art, design &amp; interfaces.</p>
+          <hr class="hairline" />
+          <div class="hero-foot">
+            <ul class="hero-caps">
+              <li data-i18n="hero.location">Dammam ⇄ Kerala</li>
+              <li data-i18n="hero.edition">Portfolio / 001</li>
+              <li>
+                <button class="text-btn" id="fun-btn" type="button" data-i18n="hero.fun">
+                  Press for fun
+                </button>
+              </li>
+            </ul>
+            <div class="hero-side">
+              <a class="btn btn-glass" href="#work" data-i18n="hero.cta">See the work</a>
+              <p data-i18n="hero.intro"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-head">
+          <div>
+            <h2 id="work-title" class="h-medium" data-i18n="work.title">The work. No filler.</h2>
+            <div class="filters" id="filters" role="group" data-i18n-aria="work.filtersLabel"></div>
+          </div>
+          <p class="count"><span id="work-count">06</span> <span data-i18n="work.count">projects</span></p>
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <p class="about-side" data-i18n="about.study">CS + Design · FISAT</p>
+        <div class="about-body">
+          <h2 id="about-title" class="h-medium" data-i18n="about.title">Hands dirty. Screens bright.</h2>
+          <dl class="facts" id="facts"></dl>
+          <div class="tools">
+            <p class="tools-label" data-i18n="about.toolLabel">Tap a tool</p>
+            <div class="tool-list" id="tools"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT + FOOTER -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="contact-title" data-i18n="contact.title">
+          Have a strange, useful, beautiful idea?
+        </h2>
+        <div class="contact-actions">
+          <a
+            class="btn btn-dark"
+            id="mail-link"
+            href="mailto:lutfithayyil7309@gmail.com"
+            data-i18n="contact.makeIt"
+            >Let’s make it</a
+          >
+          <button class="btn btn-outline" id="copy-email" type="button" data-i18n="contact.copyEmail">
+            Copy email
+          </button>
+        </div>
+        <ul class="socials" id="socials" data-i18n-aria="contact.socials"></ul>
+        <footer class="footer">
+          <p data-i18n="footer.rights">© 2026 Abdullah Lutfi Thayyil</p>
+          <a class="back-top" href="#top"><span data-i18n="footer.top">Back to top</span></a>
+        </footer>
+      </section>
+    </main>
+
+    <!-- Artwork lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <div
+        class="lightbox-sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lb-title"
+        id="lightbox-sheet"
+      ></div>
+    </div>
+
+    <div id="sticker-layer" aria-hidden="true"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

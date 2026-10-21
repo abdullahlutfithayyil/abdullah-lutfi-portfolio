@@ -1,0 +1,15 @@
+{
+  "name": "abdullah-lutfi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Abdullah Lutfi Thayyil: vanilla HTML, CSS and JS, no build step.",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 3000",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "check": "prettier --check \"**/*.{html,css,js,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3"
+  }
+}
